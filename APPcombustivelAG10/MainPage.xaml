@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APPcombustivelAG10.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            
+            <Label Text="Calcúlo de combustivel" FontSize="Title" HorizontalTextAlignment="Center" 
+                    HeightRequest="50" Background="Grey"/>
+            
+            <Label Text="Marca do Veículo" />
+            <Entry x:Name="txt_Marca" Placeholder="Marca" BackgroundColor="White"/>
+            <Label Text="Modelo do Veículo" />
+            <Entry x:Name="txt_modelo" Placeholder="Modelo" BackgroundColor="White"/>
+
+            <Label Text="Preço do Etanol:" />
+            <Entry x:Name="txt_etanol" Placeholder="0.00 R$ " BackgroundColor="White"/>
+
+            <Label Text="Preço da Gasolina:" />
+            <Entry x:Name="txt_gasolina" Placeholder="0.00 R$ " BackgroundColor="White"/>
+
+            <Button Text="CONFIRMAR" Clicked="Button_Clicked" BackgroundColor="Grey" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
